@@ -1,0 +1,67 @@
+license: (MIT License)
+
+Copyright (C) 2014, Zhang Boyang 
+
+Permission is hereby granted, free of charge, to any person obtaining a 
+copy of this software and associated documentation files (the "Software"), 
+to deal in the Software without restriction, including without limitation 
+the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+and/or sell copies of the Software, and to permit persons to whom the 
+Software is furnished to do so, subject to the following conditions: 
+
+The above copyright notice and this permission notice shall be included in 
+all copies or substantial portions of the Software. 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL 
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE. 
+
+
+intro:
+  this is a small program which can achieve many users' documents from
+  http://course.pkuschool.edu.cn
+  written by ZBY. (2014-06-02, 2014-06-03, 2014-06-17, 2014-06-18)
+
+
+requirements:
+  (1) if you are using LINUX, make sure you have installed:
+        [coreutils, wget, iconv, gcc]
+  (2) if you are using WINDOWS + CYGWIN, you need install these packages:
+        [wget, gcc-core, libiconv]
+	  you also need a text editor to edit config files:
+	    [nano or vim] (you can choose whatever you like)
+      p.s. the performance of cygwin is really bad
+  (3) other plantforms are not tested, you can try it yourself.
+
+
+warning:
+  ==> USE AT YOUR OWN RISK! <==
+  THIS PROGRAM HAS MANY SECURITY HOLES, SUCH AS SHELL CODE INJECTION,
+  BUFFER OVERFLOW... THEREFORE, THE WEBMASTER (aka. WangGuan) CAN EASYLY
+  DESTORY YOUR COMPUTER!
+
+
+usage:
+  (1) write users and their passwords to 'userpass.conf'.
+  (2) run './eol_achiever.sh'.
+  (3) your documents are in '/files', and all information is logged to
+      'achiever.log', downloaded lessons are in 'exclude_lid.txt' and
+	  'lesson_map.txt', file renames are in 'file_map.txt'.
+
+
+content-type.conf:
+  sometimes the server won't tell the full file name, therefore the
+  achiever need to determine the file extension itself. this file is a
+  map from content-types to file-extensions. you may add you own map
+  rules to this file.
+
+
+extra:
+  there is a small script to list users called 'get_user_list.sh'.
+  you need add at least one user to 'userpass.conf' first.
+  for example, you can use './get_user_list.sh 14' to list 142XXXX.
+
