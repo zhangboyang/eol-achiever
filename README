@@ -32,8 +32,8 @@ requirements:
         [coreutils, wget, iconv, gcc]
   (2) if you are using WINDOWS + CYGWIN, you need install these packages:
         [wget, gcc-core, libiconv]
-	  you also need a text editor to edit config files:
-	    [nano or vim] (you can choose whatever you like)
+      you also need a text editor to edit config files:
+        [nano or vim] (you can choose whatever you like)
       p.s. the performance of cygwin is really bad
   (3) other plantforms are not tested, you can try it yourself.
 
@@ -50,7 +50,7 @@ usage:
   (2) run './eol_achiever.sh'.
   (3) your documents are in '/files', and all information is logged to
       'achiever.log', downloaded lessons are in 'exclude_lid.txt' and
-	  'lesson_map.txt', file renames are in 'file_map.txt'.
+      'lesson_map.txt', file renames are in 'file_map.txt'.
 
 
 content-type.conf:
